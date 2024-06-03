@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #333;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            height: 40px;
+            margin-right: 30px;
+        }
+
+        .home-icon {
+            height: 70px;
+        }
+        .homepage-icon{
+            height: 60px;
+        }
+        #routeForm {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #routeForm label {
+            font-size: 16px;
+            color: #666;
+        }
+
+        #routeForm input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        #routeForm button {
+            padding: 10px 20px;
+            background: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #routeForm button:hover {
+            background: #218838;
+        }
+        .sponsors {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 500px;
+            margin-left: 20px;
+            bottom: 0%;
+        }
+        .sponsor-logo {
+            height: 60px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1tOiF2q82zfvpz9mTSTqj-cNJBhaSWdfLrg&s" alt="Home" class="home-icon"></a>
+        <a href="homepage.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1wGeDyIqZWNqiY3-_nS7e44kBcr6wDQqA9Q&s" alt="Homepage" class="homepage-icon"></a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5pv5n9gukN2mo1ZFxD1iobyubOhALPyas4g&s" alt="Logo" class="logo">
+    </header>
+    <h1>ROUTE OPTIONS</h1>
+    <form id="routeForm">
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source" required>
+        
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <div class="sponsors">
+        <img src="https://seeklogo.com/images/K/karnataka-tourism-logo-96CA8479EF-seeklogo.com.png" alt="Sponsor 1" class="sponsor-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEk_YD7slfH0u0MM_4PiEG2qRKE2NOyEKNmQ&s" alt="Sponsor 2" class="sponsor-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_QeoUPi7-N0-1i8liLPRq-TQHBtCDlasXqA&s" alt="Sponsor 3" class="sponsor-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAiXYn-eEjWsOrUI4O5g_eKLa3Y7ZPKE2pjg&s" alt="Sponsor 4" class="sponsor-logo">
+    </div>
+</body>
+</html>
